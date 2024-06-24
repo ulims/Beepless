@@ -1,24 +1,12 @@
+<script setup>
+</script>
+
 <template>
-  <SharedNavHeader />
+  <SharedNavHeader></SharedNavHeader>
   <div>
     <slot />
   </div>
-  <SharedNavFooter />
+  <SharedFooter></SharedFooter>
 </template>
 
 
-<style scoped>
-.sticky-nav {
-  animation: sticky-nav 300ms;
-}
-
-@keyframes sticky-nav {
-  0% {
-    transform: translateY(-6em)
-  }
-
-  100% {
-    transform: translateY(0)
-  }
-}
-</style>
